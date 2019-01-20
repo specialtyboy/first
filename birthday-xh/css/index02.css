@@ -1,0 +1,240 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+.dangao{
+	position: absolute;
+    top: 265px;
+    left: 411px;
+}
+.dangao>img{
+	width: 400px;
+}
+.dangao>span{
+	position: absolute;
+	font-size: 25px;
+	transform-origin: center;
+	transform: rotate(10deg);
+	background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+    -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+    -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+    -webkit-background-size: 200% 100%; 
+    -webkit-animation: masked-animation 4s linear infinite;
+}
+.dangao>span:nth-of-type(1){
+	top: 152px;
+    left: 85px;
+    transform: rotate(40deg);
+}
+.dangao>span:nth-of-type(2){
+    top: 163px;
+    left: 99PX;
+    transform: rotate(32deg);
+}
+.dangao>span:nth-of-type(3){
+	top: 172px;
+    left: 117px;
+    transform: rotate(30deg);
+}
+.dangao>span:nth-of-type(4){
+    top: 178px;
+    left: 132px;
+    transform: rotate(23deg);
+}
+.dangao>span:nth-of-type(5){
+    top: 183px;
+    left: 148px;
+    transform: rotate(13deg);
+}
+.dangao>span:nth-of-type(6){
+	top: 185px;
+    left: 166px;
+    transform: rotate(0deg);
+    background-image: -webkit-linear-gradient(left,#e80a0a,#11fc23 10%,#f2111b 20%,#f6820a 30%, #0dc969 40%, #d7740d 50%,#e3f208 60%,#f8cf09 70%,#f81025 80%,#f60d2d 90%,#eca506 100%);
+}
+.dangao>span:nth-of-type(7){
+	top: 187px;
+    left: 197PX;
+    transform: rotate(-10deg);
+}
+.dangao>span:nth-of-type(8){
+	top: 187px;
+    left: 215PX;
+    transform: rotate(-12deg);
+}
+.dangao>span:nth-of-type(9){
+    top: 186px;
+    left: 226PX;
+    transform: rotate(-20deg);
+}
+.dangao>span:nth-of-type(10){
+    top: 179px;
+    left: 248PX;
+    transform: rotate(-26deg);
+}
+.dangao>span:nth-of-type(11){
+	top: 170px;
+    left: 265PX;
+    transform: rotate(-30deg);
+}
+.dangao>span:nth-of-type(12){
+	top: 160px;
+    left: 284PX;
+    transform: rotate(-30deg);
+}
+.dangao>span:nth-of-type(13){
+	top: 144px;
+    left: 299PX;
+    transform: rotate(-30deg);
+}
+.dangao>span:nth-of-type(14){
+	top: 131px;
+    left: 309PX;
+    transform: rotate(-30deg);
+}
+@keyframes masked-animation {
+    0% {
+        background-position: 0  0;
+    }
+    100% {
+        background-position: -100%  0;
+    }
+}
+.top_img{
+	height: 208px;
+	background-color: #6BA9E6;
+	overflow: hidden;
+}
+.top_img>ul{
+	width: 4500px;
+	height: 208px;
+}
+.top_img li{
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 0 5px;
+	border: 4px solid #fff;
+}
+.top_img li>img{
+	width: 200px;
+}
+#wrap{
+	position: relative;
+	height: 690px;
+	margin: 0 auto;
+	background:#6BA9E6 url(../img/back01.png) no-repeat;
+	background-size: 100%;
+}
+.fanhui>a{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: dodgerblue;
+	font-size: 14px;
+	opacity: .7;
+}
+.fanhui>a:hover{
+	color: red;
+}
+#wrap>span{
+	float: left;
+	width: 55px;
+	height: 55px;
+	font-size: 14px;
+	color: green;
+	text-align: center;
+	line-height: 50px;
+	margin-left:6px;
+	background: url(../img/aixin02.png) no-repeat;
+	background-size: 95%;
+	transform-origin: center;
+	opacity: 0;
+	transition:1.5s;
+}
+#wrap>.one{
+	color: deeppink;
+	font-size: 18px;
+	font-weight: 600;
+	animation:one 10s linear 2s infinite;
+}
+#wrap>.two{
+	
+	animation:two 10s linear .5s infinite;
+}
+#wrap>.three{
+	animation:three 10s linear 1.5s infinite;
+}
+#wrap>.four{
+	animation:four 10s linear 2.5s infinite;
+}
+#wrap>.end{
+	color: yellow;
+	font-size: 18px;
+	font-weight: 600;
+}
+@keyframes one{
+	0%{opacity: .5;}
+	20%{
+		opacity: 1;
+	}
+	40%{
+		opacity: .5;
+	}
+	90%{
+		transform: translateY(670px);
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes two{
+	0%{opacity: .5;}
+	20%{
+		color: blue;
+		font-size: 16px;
+		width: 65px;
+		height: 65px;
+		font-weight: 600px;
+		background: url(../img/aixin.png) no-repeat;
+		background-size: 95%;
+	}
+	90%{
+		
+		transform: translateY(690px);
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes three{
+	0%{opacity: .5;}
+	20%{
+		opacity: 1;
+	}
+	90%{
+		transform: translateY(690px) rotate(720deg);
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes four{
+	0%{opacity: .5;}
+	20%{
+		opacity: 1;
+	}
+	90%{
+		transform: translateY(690px) rotate(720deg);
+	}
+	100%{
+		opacity: 0;
+	}
+}
