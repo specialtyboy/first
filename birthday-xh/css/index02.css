@@ -11,8 +11,9 @@ a{
 
 .dangao{
 	position: absolute;
-    top: 265px;
-    left: 411px;
+    top: 62%;
+    left: 45%;
+    transform: translate(-50%,-50%);
 }
 .dangao>img{
 	width: 400px;
